@@ -1,6 +1,18 @@
 # GOV.UK Colophon
 
-A large but not exhaustive list of the key components, tools and services that have gone into the construction of GOV.UK. The tools we use [will change and evolve over time](http://digital.cabinetoffice.gov.uk/2012/10/12/coding-in-the-open/) so this list represents the state of things on October 17th 2012 when GOV.UK takes over from Directgov and Businesslink. We prepared similar lists for [the alpha of GOV.UK](http://digital.cabinetoffice.gov.uk/colophon-alpha/) and [for the beta](http://digital.cabinetoffice.gov.uk/colophon-beta/) and hope to produce similar documents at key stages of the site’s evolution.
+The GOV.UK Colophon is a large, but not exhaustive, list of the key components,
+tools and services which have been used during the construction of GOV.UK. The
+tools we use have changed over time, and we hope that this Git repository allows
+you to chart them.
+
+We started the colophon on October 17th 2012, when GOV.UK took over from
+Directgov and Businesslink as the best place to find government services and
+information. By looking at the commit history on this file, you'll be able to
+see exactly which tools we've introduced since launch.
+
+Similar lists were produced for [the alpha of
+GOV.UK](https://gds.blog.gov.uk/colophon-alpha/) and [for the
+beta](https://gds.blog.gov.uk/colophon-beta/).
 
 ### Frontend:
 
