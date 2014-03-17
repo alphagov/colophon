@@ -10,9 +10,10 @@ Directgov and Businesslink as the best place to find government services and
 information. By looking at the commit history on this file, you'll be able to
 see exactly which tools we've introduced since launch.
 
-Similar lists were produced for [the alpha of
-GOV.UK](https://gds.blog.gov.uk/colophon-alpha/) and [for the
-beta](https://gds.blog.gov.uk/colophon-beta/).
+During the [alpha](https://gds.blog.gov.uk/colophon-alpha/) and
+[beta](https://gds.blog.gov.uk/colophon-beta/) phases of GOV.UK, we compiled
+similar lists. They chart, from a tooling perspective, the site's progress over
+time.
 
 ### Frontend:
 
