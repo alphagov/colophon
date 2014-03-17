@@ -66,7 +66,7 @@ time.
   * All our code is tested by [Jenkins](http://en.wikipedia.org/wiki/Jenkins_(software)), which we also use to deploy it to servers
   * We track usage of the site with Google Analytics, using their API heavily to build dashboards
   * We expose GOV.UK's performance data to the world through the [Performance Platform](https://www.gov.uk/performance/dashboard).
-  * DNS is hosted by [Dyn](http://www.dyn.com) and [Janet](http://www.ja.net]
+  * DNS is hosted by [Dyn](http://www.dyn.com) and [Janet](http://www.ja.net)
   * Email (internal alerts) sending via [Amazon SES](http://aws.amazon.com/ses/)
   * Font handling and preparation with [FontForge](http://fontforge.org/) and [FontTools](http://sourceforge.net/projects/fonttools/)
   * We keep on track and in touch using Google Apps, Pivotal Tracker and Campfire
