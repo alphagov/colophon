@@ -56,18 +56,17 @@ time.
 
 ### Monitoring, managing and alerting:
 
-  * We gather metrics from our apps with[ statsd](https://github.com/etsy/statsd)
-  * We collect logs with [logstash](http://logstash.net/)
-  * We monitor systems with [ganglia](http://en.wikipedia.org/wiki/Ganglia_(software))
-  * [Graphite](http://graphite.wikidot.com/start) helps us make many, many graphs to understand what’s going on
-  * [Nagios](http://en.wikipedia.org/wiki/Nagios) tells us if we need to act on any of that data
+  * We gather metrics from our applications using [statsd](https://github.com/etsy/statsd)
+  * [Grafana](https://github.com/alphagov/grafana), a Graphite frontend, helps us graph our infrastructure and apps to understand what's going on 
+  * We collect logs with [Logstash](http://logstash.net), which we pipe in to [Elasticsearch](http://elasticsearch.org), and collate using [Kibana](http://elasticsearch.org/overview/kibana).
+  * We monitor systems with [Icinga](http://www.icinga.org), and use [Blinken](https://github.com/alphagov/blinken) tells us if we need to act on any of that data
 
 ### Supporting Tools:
 
   * All our code is tested by [Jenkins](http://en.wikipedia.org/wiki/Jenkins_(software)), which we also use to deploy it to servers
   * We track usage of the site with Google Analytics, using their API heavily to build dashboards
-  * We occasionally use [New Relic RPM](http://en.wikipedia.org/wiki/New_Relic) for performance reviews
-  * DNS is hosted by ja.net / Dyn
+  * We expose GOV.UK's performance data to the world through the [Performance Platform](https://www.gov.uk/performance/dashboard).
+  * DNS is hosted by [Dyn](http://www.dyn.com) and [Janet](http://www.ja.net]
   * Email (internal alerts) sending via [Amazon SES](http://aws.amazon.com/ses/)
   * Font handling and preparation with [FontForge](http://fontforge.org/) and [FontTools](http://sourceforge.net/projects/fonttools/)
   * We keep on track and in touch using Google Apps, Pivotal Tracker and Campfire
