@@ -24,14 +24,16 @@ time.
   * We use [SCSS](http://en.wikipedia.org/wiki/Scss), as seen in [our frontend toolkit](https://github.com/alphagov/govuk_frontend_toolkit)
   * We’ve worked with [A2-Type for font production](http://www.a2-type.co.uk/).
 
-### The core of the servers:
+### Infrastructure:
 
-  * We’re making use of [Infrastructure As A Service](http://digital.cabinetoffice.gov.uk/2012/09/25/why-iaas/) from [Skyscape](http://digital.cabinetoffice.gov.uk/2012/09/18/introducing-a-new-supplier-skyscape/)
-  * We use [Fastly](http://www.fastly.com) as our primary Content Delivery Network provider
-  * Our servers are running [Ubuntu GNU/Linux 12.04](http://en.wikipedia.org/wiki/Ubuntu_(operating_system)).
-  * Servers are managed with [Puppet](http://en.wikipedia.org/wiki/Puppet_(software)), using PuppetDB and Hiera
-  * Web serving is handled by [nginx](http://en.wikipedia.org/wiki/Nginx), proxying to [unicorn](http://unicorn.bogomips.org/) for our ruby applications. We’re also using [gunicorn](http://gunicorn.org/) to run some supporting services. One of the team wrote [Unicorn Herder](https://github.com/alphagov/unicornherder) to make Unicorn play nicely with [upstart](http://en.wikipedia.org/wiki/Upstart).
-  * We load balance internally with [haproxy](http://haproxy.1wt.eu/) and cache requests using [Varnish](http://en.wikipedia.org/wiki/Varnish_(software))
+  * We’re making use of [Infrastructure-as-a-Service](http://digital.cabinetoffice.gov.uk/2012/09/25/why-iaas/) from [Skyscape](http://digital.cabinetoffice.gov.uk/2012/09/18/introducing-a-new-supplier-skyscape/)
+  * [Fastly](http://www.fastly.com) are our [content delivery](http://en.wikipedia.org/wiki/Content_Delivery_Network) provider
+  * We cache requests using [Varnish](http://en.wikipedia.org/wiki/Varnish_(software))
+  * We load-balance internally with [HAProxy](http://haproxy.1wt.eu).
+  * Our servers are running [Ubuntu GNU/Linux 12.04](http://en.wikipedia.org/wiki/Ubuntu_(operating_system))
+  * Servers are managed with [Puppet](http://en.wikipedia.org/wiki/Puppet_(software)). We also rely on PuppetDB, librarian-puppet and Hiera.
+  * Web traffic is served by [Nginx](http://en.wikipedia.org/wiki/Nginx) which proxies to [Unicorn](http://unicorn.bogomips.org/) for our Ruby applications.
+  * [gUnicorn](http://www.gunicorn.org) is used to run some supporting services, and [one of the team](https://github.com/nickstenning) wrote [Unicorn Herder](https://github.com/alphagov/unicornherder) to make Unicorn work nicely with [Upstart](http://en.wikipedia.org/wiki/Upstart).
 
 ### Redirection:
 
