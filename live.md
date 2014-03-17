@@ -73,4 +73,4 @@ time.
   * Github helps us manage and discuss our code
   * Zendesk keeps the feedback flowing
   * We use [jekyll](http://jekyllrb.com/) &amp; [heroku](http://www.heroku.com/) for some of our prototyping
-  * We’ve built all sorts of internal dashboards. They’re very much our playground and you can find them written in a mixture of Ruby, [Clojure, Node.JS, and PHP](http://digital.cabinetoffice.gov.uk/2012/02/08/radiating-information/)
+  * We've built lots of internal dashboards in a mixture of Ruby, Clojure, Node.JS and PHP.
