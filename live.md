@@ -14,9 +14,9 @@ A large but not exhaustive list of the key components, tools and services that h
 ### The core of the servers:
 
   * We’re making use of [Infrastructure As A Service](http://digital.cabinetoffice.gov.uk/2012/09/25/why-iaas/) from [Skyscape](http://digital.cabinetoffice.gov.uk/2012/09/18/introducing-a-new-supplier-skyscape/)
-  * We use [Akamai](http://en.wikipedia.org/wiki/Akamai_Technologies) as our Content Delivery Network
-  * Our servers are running [Ubuntu GNU/Linux 10.04](http://en.wikipedia.org/wiki/Ubuntu_(operating_system)), we’re hoping to upgrade to 12.04 soon.
-  * Servers are managed with [Puppet](http://en.wikipedia.org/wiki/Puppet_(software)), using PuppetDB
+  * We use [Fastly](http://www.fastly.com) as our primary Content Delivery Network provider
+  * Our servers are running [Ubuntu GNU/Linux 12.04](http://en.wikipedia.org/wiki/Ubuntu_(operating_system)).
+  * Servers are managed with [Puppet](http://en.wikipedia.org/wiki/Puppet_(software)), using PuppetDB and Hiera
   * Web serving is handled by [nginx](http://en.wikipedia.org/wiki/Nginx), proxying to [unicorn](http://unicorn.bogomips.org/) for our ruby applications. We’re also using [gunicorn](http://gunicorn.org/) to run some supporting services. One of the team wrote [Unicorn Herder](https://github.com/alphagov/unicornherder) to make Unicorn play nicely with [upstart](http://en.wikipedia.org/wiki/Upstart).
   * We load balance internally with [haproxy](http://haproxy.1wt.eu/) and cache requests using [Varnish](http://en.wikipedia.org/wiki/Varnish_(software))
 
