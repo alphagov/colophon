@@ -18,7 +18,7 @@ A large but not exhaustive list of the key components, tools and services that h
   * Our servers are running [Ubuntu GNU/Linux 12.04](http://en.wikipedia.org/wiki/Ubuntu_(operating_system)).
   * Servers are managed with [Puppet](http://en.wikipedia.org/wiki/Puppet_(software)), using PuppetDB and Hiera
   * Web serving is handled by [nginx](http://en.wikipedia.org/wiki/Nginx), proxying to [unicorn](http://unicorn.bogomips.org/) for our ruby applications. We’re also using [gunicorn](http://gunicorn.org/) to run some supporting services. One of the team wrote [Unicorn Herder](https://github.com/alphagov/unicornherder) to make Unicorn play nicely with [upstart](http://en.wikipedia.org/wiki/Upstart).
-  * We load balance internally with [haproxy](http://haproxy.1wt.eu/) and cache requests using [Varnish](http://en.wikipedia.org/wiki/Varnish_(software))
+  * We load balance internally with nginx and cache requests using [Varnish](http://en.wikipedia.org/wiki/Varnish_(software))
 
 ### Redirection:
 
