@@ -1,6 +1,6 @@
 # GOV.UK Colophon
 
-A large but not exhaustive list of the key components, tools and services that have gone into the construction of GOV.UK. The tools we use [will change and evolve over time](http://digital.cabinetoffice.gov.uk/2012/10/12/coding-in-the-open/) so this list represents the state of things on October 17th 2012 when GOV.UK takes over from Directgov and Businesslink. We prepared similar lists for [the alpha of GOV.UK](http://digital.cabinetoffice.gov.uk/colophon-alpha/) and [for the beta](http://digital.cabinetoffice.gov.uk/colophon-beta/) and hope to produce similar documents at key stages of the site’s evolution.
+A large but not exhaustive list of the key components, tools and services that have gone into the construction of GOV.UK. The tools we use [will change and evolve over time](https://gds.blog.gov.uk/2012/10/12/coding-in-the-open/) so this list represents the state of things on October 17th 2012 when GOV.UK takes over from Directgov and Businesslink. We prepared similar lists for [the alpha of GOV.UK](https://gds.blog.gov.uk/colophon-alpha/) and [for the beta](https://gds.blog.gov.uk/colophon-beta/) and hope to produce similar documents at key stages of the site’s evolution.
 
 ### Frontend:
 
@@ -13,7 +13,7 @@ A large but not exhaustive list of the key components, tools and services that h
 
 ### The core of the servers:
 
-  * We’re making use of [Infrastructure As A Service](http://digital.cabinetoffice.gov.uk/2012/09/25/why-iaas/) from [Skyscape](http://digital.cabinetoffice.gov.uk/2012/09/18/introducing-a-new-supplier-skyscape/)
+  * We’re making use of [Infrastructure As A Service](https://gds.blog.gov.uk/2012/09/25/why-iaas/) from [Skyscape](https://gds.blog.gov.uk/2012/09/18/introducing-a-new-supplier-skyscape/)
   * We use [Fastly](http://www.fastly.com) as our primary Content Delivery Network provider
   * Our servers are running [Ubuntu GNU/Linux 12.04](http://en.wikipedia.org/wiki/Ubuntu_(operating_system)).
   * Servers are managed with [Puppet](http://en.wikipedia.org/wiki/Puppet_(software)), using PuppetDB and Hiera
@@ -22,7 +22,7 @@ A large but not exhaustive list of the key components, tools and services that h
 
 ### Redirection:
 
-  * nginx deserves an extra mention as it’s [letting us do all our redirection](http://digital.cabinetoffice.gov.uk/2012/10/11/no-link-left-behind/)
+  * nginx deserves an extra mention as it’s [letting us do all our redirection](https://gds.blog.gov.uk/2012/10/11/no-link-left-behind/)
   * we’re using [perl](http://www.perl.org) to manage and test our redirections
   * there’s some [php](http://en.wikipedia.org/wiki/Php) to add useful links to the “gone” pages where DirectGov and Businesslink content has been retired
   * [node.js](http://en.wikipedia.org/wiki/Node.js) was used to build a side-by-side browser for reviewing the redirections
@@ -36,7 +36,7 @@ A large but not exhaustive list of the key components, tools and services that h
 ### Databases and other storage:
 
   * We use [MongoDB](http://en.wikipedia.org/wiki/Mongodb) for most systems, with a few apps also making use of [MySQL](http://en.wikipedia.org/wiki/Mysql). [PostgreSQL](http://en.wikipedia.org/wiki/Postgresql) is used by Mapit and Puppet.
-  * Most search on the site is [powered by Elasticsearch](http://digital.cabinetoffice.gov.uk/2012/08/03/from-solr-to-elasticsearch/), though [solr](http://en.wikipedia.org/wiki/Solr) is currently the backend for the need-o-tron.
+  * Most search on the site is [powered by Elasticsearch](https://gds.blog.gov.uk/2012/08/03/from-solr-to-elasticsearch/), though [solr](http://en.wikipedia.org/wiki/Solr) is currently the backend for the need-o-tron.
   * A few event-driven systems use [RabbitMQ](http://en.wikipedia.org/wiki/Rabbitmq)
 
 ### Monitoring, managing and alerting:
@@ -59,4 +59,4 @@ A large but not exhaustive list of the key components, tools and services that h
   * Github helps us manage and discuss our code
   * Zendesk keeps the feedback flowing
   * We use [jekyll](http://jekyllrb.com/) &amp; [heroku](http://www.heroku.com/) for some of our prototyping
-  * We’ve built all sorts of internal dashboards. They’re very much our playground and you can find them written in a mixture of Ruby, [Clojure, Node.JS, and PHP](http://digital.cabinetoffice.gov.uk/2012/02/08/radiating-information/)
+  * We’ve built all sorts of internal dashboards. They’re very much our playground and you can find them written in a mixture of Ruby, [Clojure, Node.JS, and PHP](https://gds.blog.gov.uk/2012/02/08/radiating-information/)
